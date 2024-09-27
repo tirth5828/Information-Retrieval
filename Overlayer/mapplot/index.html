@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Animation</title>
+  <link rel="stylesheet" href="node_modules/ol/ol.css">
+  <style>
+    .map {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map" class="map"></div>
+  <table class="controls">
+    <tr>
+      <th></th>
+      <th>dot product value</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>
+        <input id="scaleX" type="range" min="0" max="1" step="0.01" value="0.65" />
+      </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+  <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+  <script type="module" src="./src/main.jsx"></script>
+</body>
+
+</html>
